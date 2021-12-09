@@ -2,7 +2,7 @@
 
 The invention of Plex and JellyFin to host your own Netflix-esq service was a great idea. However it lacks a tv "guide" experience. What if you don't know what you want to watch? There are also those of us running media servers to help our less technically inclined parents get off of cable. This is intended to be that "Guide" experience.
 
-The program itself is a service (originally based off the source code of MarkLieberman's [IPTvTuner](https://github.com/marklieberman/iptvtuner), that runs in the background providing an IPTV interface for Plex, Emby, JellyFin, etc to connect to as if it were a HDHomeRun tuner (or equivalent).
+The program itself is a service (originally based off the source code of MarkLieberman's [IPTvTuner](https://github.com/marklieberman/iptvtuner)), that runs in the background providing an IPTV interface for Plex, Emby, JellyFin, etc to connect to as if it were a HDHomeRun tuner (or equivalent).
 
 This service can be configured to create your own "channels" from the media existing on your device, then serves it to your media server as if the channel lineup came from a service provider.
 
@@ -29,7 +29,7 @@ Otherwise, enjoy the project, I hope it helps fulfill your media server "guide" 
 - [ ] Custom tool to create tv lineups (instead of current text-based creation)
 - [ ] Custom plugins to interface with JellyFin, Emby, Plex, (more?)
 - [ ] Custom Branding?
-- [ ] **__Maybe__** Ability to pull from streaming websites (like you can do with a firestick) **__Maybe__**
+- [ ] ***Maybe*** Ability to pull from streaming websites (like you can do with a firestick) ***Maybe***
 
 
 ### The Configuration File
