@@ -1,0 +1,21 @@
+[
+    {
+        "guid": "9574ac10-bf23-49bc-949f-924f23cfa48f",
+        "name": "Emulated TV Guide",
+        "description": "A custom generated TV Guide that uses your own media to make 'channels' to mimic live tv\n",
+        "overview": "Emulated TV Guide",
+        "owner": "Gigawiz",
+		"imageURL": "https://raw.githubusercontent.com/danieladov/jellyfin-plugin-skin-manager/master/src/img/thumb.png",
+        "category": "LiveTV",
+        "versions": [
+			{
+                "version": "1.0.0",
+                "changelog": "Initial GIT Commit, getting files for repository ready\n",
+                "targetAbi": "10.7.0.0",
+                "sourceUrl": "https://github.com/Gigawiz/Jellyfin.EmuGuide/releases/latest/download/Jellyfin-Plugin-EmuGuide.zip",
+                "checksum": "64672b424ca0ac7cd1f3b032eef40b55",
+                "timestamp": "2021-05-13 12:02:52"
+            }
+        ]
+    }
+]
