@@ -1,4 +1,5 @@
-# Jellyfin.EmuGuide
+# Emulated Media Guide
+
 The invention of Plex and JellyFin to host your own Netflix-esq service was a great idea. However it lacks a tv "guide" experience. What if you don't know what you want to watch? There are also those of us running media servers to help our less technically inclined parents get off of cable. This is intended to be that "Guide" experience.
 
 The program itself is a service (originally based off the source code of MarkLieberman's [IPTvTuner](https://github.com/marklieberman/iptvtuner), that runs in the background providing an IPTV interface for Plex, Emby, JellyFin, etc to connect to as if it were a HDHomeRun tuner (or equivalent).
@@ -31,7 +32,7 @@ Otherwise, enjoy the project, I hope it helps fulfill your media server "guide" 
 - [ ] **__Maybe__** Ability to pull from streaming websites (like you can do with a firestick) **__Maybe__**
 
 
-#### The Configuration File
+### The Configuration File
 ```
 [Server]
 IpAddress=127.0.0.1
