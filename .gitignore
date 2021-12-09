@@ -8,5 +8,8 @@ Builds/Plugins/Jellyfin/Release/net5.0/
 Builds/Service/
 Builds/Service/Debug/
 Builds/Service/Release/
+Builds/Updater/Debug/
+Builds/Updater/Release/
 Plugins/JellyFin/obj/
 Service/obj/
+Updater/obj/

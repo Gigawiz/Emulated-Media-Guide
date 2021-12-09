@@ -46,6 +46,9 @@ $acl.SetAccessRule($AccessRule)
 $acl | Set-Acl .\EmulatedMediaGuide.exe
 $acl | Set-Acl .\Newtonsoft.Json.dll
 $acl | Set-Acl .\uhttpsharp.dll
+$acl | Set-Acl .\EmulatedMediaGuide.exe.config
+$acl | Set-Acl .\System.IO.Compression.dll
+$acl | Set-Acl .\System.IO.Compression.ZipFile.dll
 ```
 
 3. Using an admin console, register the EmulatedMediaGuide service.

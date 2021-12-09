@@ -1,10 +1,14 @@
-﻿using Microsoft.Win32;
+﻿using EmulatedMediaGuide.Handlers;
+using Microsoft.Win32;
 using System;
 using System.CodeDom;
 using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.IO.Compression;
+using System.Net;
+using System.Threading.Tasks;
 
 namespace EmulatedMediaGuide
 {
@@ -26,12 +30,21 @@ namespace EmulatedMediaGuide
         private string logDir;
         private bool textLoggingEnabled;
         private string logFileName;
+        private bool autoUpdate;
 
         public Config(EventLog eventLog) {
             this.eventLog = eventLog;
             this.settingsFile = new IniFile(Path.Combine(this.DataPath, "config.ini"));
             this.logFileName = DateTime.Now.ToString("MM.dd.yyyy.HH.mm") + ".log";
             Read();
+            if (checkUpdate())
+            {
+                if (Directory.Exists(Path.Combine(this.DataPath, "update")))
+                {
+                    Directory.Delete(Path.Combine(this.DataPath, "update"), true);
+                }
+                downloadUpdateInBackground();
+            }
             //checkStoredSetting();
         }
 
@@ -55,6 +68,8 @@ namespace EmulatedMediaGuide
             settingsFile.configLog(string.Format("{0}={1}", "epgUrl", this.epgUrl), true);
             settingsFile.configLog(string.Format("[{0}]", "Regex"), true);
             settingsFile.configLog(string.Format("{0}={1}", "Filter", this.filter), true);
+            settingsFile.configLog(string.Format("[{0}]", "Updates"), true);
+            settingsFile.configLog(string.Format("{0}={1}", "AutoUpdate", this.autoUpdate), true);
         }
 
         public void Read()
@@ -73,6 +88,7 @@ namespace EmulatedMediaGuide
             this.m3uUrl = settingsFile.IniReadValue("Data", "m3uUrl", "http://yourwebsite.com/emuguide/yourcustomlineup.m3u");
             this.epgUrl = settingsFile.IniReadValue("Data", "epgUrl", "https://yourwebsite.com/emuguide/yourcustomlineup.xml");
             this.filter = settingsFile.IniReadValue("Regex", "Filter", ".*");
+            this.autoUpdate = bool.Parse(settingsFile.IniReadValue("Updates", "AutoUpdate", "true"));
         }
 
         public string DataPath
@@ -82,6 +98,35 @@ namespace EmulatedMediaGuide
                 return System.AppDomain.CurrentDomain.BaseDirectory;
                 //return Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
             }
+        }
+
+        public string updateUrl
+        {
+            get
+            {
+                return "https://github.com/Gigawiz/Emulated-Media-Guide/releases/latest/download/latest.zip";
+            }
+        }
+
+        public string internetVersion
+        {
+            get
+            {
+                return "https://raw.githubusercontent.com/Gigawiz/Emulated-Media-Guide/main/Resources/Updates/version.txt";
+            }
+        }
+
+        public int[] programVersion
+        {
+            get
+            {
+                return new int[] { 1, 0, 2, 2 };
+            }
+        }
+
+        public bool AutoUpdate
+        {
+            get { return this.autoUpdate; }
         }
 
         public string IpAddress
@@ -203,6 +248,112 @@ namespace EmulatedMediaGuide
                     return writer.ToString();
                 }
             }
+        }
+
+        public void downloadUpdateInBackground()
+        {
+            WebClient client = new WebClient();
+            string updateDiskLocation = Path.Combine(this.DataPath, "latest.zip");
+            client.DownloadProgressChanged += Client_DownloadProgressChanged;
+            client.DownloadFileCompleted += Client_DownloadFileCompleted;
+            client.DownloadFileAsync(new Uri(updateUrl), updateDiskLocation);
+        }
+
+        private void Client_DownloadFileCompleted(object sender, System.ComponentModel.AsyncCompletedEventArgs e)
+        {
+            //update downloaded!
+            TextLog($"Update file downloaded!");
+            if (AutoUpdate)
+            {
+                TextLog($"Preparing server update!");
+                string zipPath = Path.Combine(this.DataPath, "latest.zip");
+                string extractPath = Path.Combine(this.DataPath, "update");
+
+                if (!Directory.Exists(extractPath))
+                {
+                    Directory.CreateDirectory(extractPath);
+                }
+
+                using (ZipArchive archive = ZipFile.OpenRead(zipPath))
+                {
+                    var totalZipEntries = archive.Entries.Count;
+                    var completedZipEntries = 0;
+                    foreach (var entry in archive.Entries)
+                    {
+                        // Gets the full path to ensure that relative segments are removed.
+                        string destinationPath = Path.GetFullPath(Path.Combine(extractPath, entry.FullName));
+
+                        // Ordinal match is safest, case-sensitive volumes can be mounted within volumes that
+                        // are case-insensitive.
+                        if (destinationPath.StartsWith(extractPath, StringComparison.Ordinal))
+                            entry.ExtractToFile(destinationPath);
+
+
+                        // update progess there
+                        completedZipEntries++;
+
+                        TextLog($"Update file extracting...");
+                        TextLog(extractionProgress(totalZipEntries, completedZipEntries));
+                    }
+                }
+                //extraction complete. Time for the restart!
+                TextLog($"Update file extracted! Restarting to apply update!");
+                Process.Start(Path.Combine(this.DataPath, "update", "Updater.exe"));
+            }
+        }
+
+        private string extractionProgress(int totalEntries, int processedEntries)
+        {
+            string progress = "0";
+            bool error = false;
+            try
+            {
+                progress = (processedEntries * 100.0 / totalEntries).ToString();
+            }
+            catch (Exception ex)
+            {
+                progress = "Error calculating progress!";
+            }
+            return string.Format((error ?  "{0}" : "{0}% complete"), progress);
+        }
+
+        private void Client_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
+        {
+            if (e.ProgressPercentage >= 1)
+            {
+                if (e.ProgressPercentage % 10 == 0)
+                {
+                    TextLog($"Update file downloading... {e.ProgressPercentage}% complete...");
+                }
+            }
+        }
+
+        public bool checkUpdate()
+        {
+            int[] webVer = webVersion();
+            int i = 0;
+            foreach (int webVerInt in webVer)
+            {
+                if (webVerInt > programVersion[i])
+                {
+                    return true;
+                }
+                i++;
+            }
+            return false;
+        }
+
+        private int[] webVersion()
+        {
+            List<int> retTmp = new List<int>();
+            WebClient client = new WebClient();
+            string reply = client.DownloadString(internetVersion);
+            
+            foreach (string replyStr in reply.Split('.'))
+            {
+                retTmp.Add(int.Parse(replyStr));
+            }
+            return retTmp.ToArray();
         }
     }
 }

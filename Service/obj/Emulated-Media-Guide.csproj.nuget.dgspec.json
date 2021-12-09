@@ -42,6 +42,14 @@
               "target": "Package",
               "version": "[12.0.2, )"
             },
+            "System.IO.Compression": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.IO.Compression.ZipFile": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
             "uHttpSharp": {
               "target": "Package",
               "version": "[0.1.6.22, )"
