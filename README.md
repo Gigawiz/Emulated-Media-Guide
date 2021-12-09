@@ -32,7 +32,7 @@ Otherwise, enjoy the project, I hope it helps fulfill your media server "guide" 
 - [ ] ***Maybe*** Ability to pull from streaming websites (like you can do with a firestick) ***Maybe***
 
 
-### The Configuration File
+## The Configuration File
 ```
 [Server]
 IpAddress=127.0.0.1
