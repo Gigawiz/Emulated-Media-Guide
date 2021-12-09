@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "5ec43488-b31d-4402-b878-52b796817603": {
+      "ProjectGuid": "5ec43488-b31d-4402-b878-52b796817603",
+      "DisplayName": "EmulatedMediaGuide",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

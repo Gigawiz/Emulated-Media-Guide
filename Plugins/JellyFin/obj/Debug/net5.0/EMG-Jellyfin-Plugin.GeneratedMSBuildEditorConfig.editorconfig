@@ -1,0 +1,10 @@
+is_global = true
+build_property.TargetFramework = net5.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = EMG_Jellyfin_Plugin
+build_property.ProjectDir = F:\desktop wipe 2021\FilesForReinstall\source\repos\Emulated-Media-Guide\Plugins\JellyFin\

@@ -1,0 +1,12 @@
+F:\desktop wipe 2021\FilesForReinstall\source\repos\Emulated-Media-Guide\Builds\Plugins\Jellyfin\Release\net5.0\EMG-Jellyfin-Plugin.deps.json
+F:\desktop wipe 2021\FilesForReinstall\source\repos\Emulated-Media-Guide\Builds\Plugins\Jellyfin\Release\net5.0\EMG-Jellyfin-Plugin.dll
+F:\desktop wipe 2021\FilesForReinstall\source\repos\Emulated-Media-Guide\Builds\Plugins\Jellyfin\Release\net5.0\ref\EMG-Jellyfin-Plugin.dll
+F:\desktop wipe 2021\FilesForReinstall\source\repos\Emulated-Media-Guide\Builds\Plugins\Jellyfin\Release\net5.0\EMG-Jellyfin-Plugin.pdb
+F:\desktop wipe 2021\FilesForReinstall\source\repos\Emulated-Media-Guide\Plugins\JellyFin\obj\Release\net5.0\EMG-Jellyfin-Plugin.csproj.AssemblyReference.cache
+F:\desktop wipe 2021\FilesForReinstall\source\repos\Emulated-Media-Guide\Plugins\JellyFin\obj\Release\net5.0\EMG-Jellyfin-Plugin.GeneratedMSBuildEditorConfig.editorconfig
+F:\desktop wipe 2021\FilesForReinstall\source\repos\Emulated-Media-Guide\Plugins\JellyFin\obj\Release\net5.0\EMG-Jellyfin-Plugin.AssemblyInfoInputs.cache
+F:\desktop wipe 2021\FilesForReinstall\source\repos\Emulated-Media-Guide\Plugins\JellyFin\obj\Release\net5.0\EMG-Jellyfin-Plugin.AssemblyInfo.cs
+F:\desktop wipe 2021\FilesForReinstall\source\repos\Emulated-Media-Guide\Plugins\JellyFin\obj\Release\net5.0\EMG-Jellyfin-Plugin.csproj.CoreCompileInputs.cache
+F:\desktop wipe 2021\FilesForReinstall\source\repos\Emulated-Media-Guide\Plugins\JellyFin\obj\Release\net5.0\EMG-Jellyfin-Plugin.dll
+F:\desktop wipe 2021\FilesForReinstall\source\repos\Emulated-Media-Guide\Plugins\JellyFin\obj\Release\net5.0\ref\EMG-Jellyfin-Plugin.dll
+F:\desktop wipe 2021\FilesForReinstall\source\repos\Emulated-Media-Guide\Plugins\JellyFin\obj\Release\net5.0\EMG-Jellyfin-Plugin.pdb

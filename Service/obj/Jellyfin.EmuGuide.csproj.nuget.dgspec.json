@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\desktop wipe 2021\\FilesForReinstall\\source\\repos\\iptvtuner\\Jellyfin.EmuGuide.csproj": {}
+  },
+  "projects": {
+    "F:\\desktop wipe 2021\\FilesForReinstall\\source\\repos\\iptvtuner\\Jellyfin.EmuGuide.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\desktop wipe 2021\\FilesForReinstall\\source\\repos\\iptvtuner\\Jellyfin.EmuGuide.csproj",
+        "projectName": "Jellyfin.EmuGuide",
+        "projectPath": "F:\\desktop wipe 2021\\FilesForReinstall\\source\\repos\\iptvtuner\\Jellyfin.EmuGuide.csproj",
+        "packagesPath": "C:\\Users\\gsusk\\.nuget\\packages\\",
+        "outputPath": "F:\\desktop wipe 2021\\FilesForReinstall\\source\\repos\\iptvtuner\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gsusk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net46"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net46": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net46": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "uHttpSharp": {
+              "target": "Package",
+              "version": "[0.1.6.22, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

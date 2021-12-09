@@ -1,0 +1,15 @@
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\bin\Release\Jellyfin.EmuGuide.exe.config
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\bin\Release\Jellyfin.EmuGuide.exe
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\bin\Release\Jellyfin.EmuGuide.pdb
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\bin\Release\Newtonsoft.Json.dll
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\bin\Release\uhttpsharp.dll
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\bin\Release\uhttpsharp.pdb
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\obj\Release\Jellyfin.EmuGuide.exe.config
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\obj\Release\Jellyfin.EmuGuide.ProjectInstaller.resources
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\obj\Release\Jellyfin.EmuGuide.Service.resources
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\obj\Release\Jellyfin.EmuGuide.csproj.GenerateResource.cache
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\obj\Release\Jellyfin.EmuGuide.csproj.CoreCompileInputs.cache
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\obj\Release\Jellyfin.EmuGuide.csproj.CopyComplete
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\obj\Release\Jellyfin.EmuGuide.exe
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\obj\Release\Jellyfin.EmuGuide.pdb
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\obj\Release\Jellyfin.EmuGuide.csproj.AssemblyReference.cache

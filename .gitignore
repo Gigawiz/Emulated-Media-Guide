@@ -1,0 +1,10 @@
+# Build and Release Folders
+Builds/
+Builds/Plugins/Jellyfin/
+Builds/Plugins/Jellyfin/Debug/
+Builds/Plugins/Jellyfin/Release/
+Builds/Plugins/Jellyfin/Debug/net5.0/
+Builds/Plugins/Jellyfin/Release/net5.0/
+Builds/Service/
+Builds/Service/Debug/
+Builds/Service/Release/

@@ -1,0 +1,15 @@
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\bin\Debug\IPTVTuner.exe.config
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\bin\Debug\IPTVTuner.exe
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\bin\Debug\IPTVTuner.pdb
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\bin\Debug\Newtonsoft.Json.dll
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\bin\Debug\uhttpsharp.dll
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\bin\Debug\uhttpsharp.pdb
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\obj\Debug\IPTVTuner.csproj.AssemblyReference.cache
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\obj\Debug\IPTVTuner.exe.config
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\obj\Debug\IPTVTuner.ProjectInstaller.resources
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\obj\Debug\IPTVTuner.Service.resources
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\obj\Debug\IPTVTuner.csproj.GenerateResource.cache
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\obj\Debug\IPTVTuner.csproj.CoreCompileInputs.cache
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\obj\Debug\IPTVTuner.csproj.CopyComplete
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\obj\Debug\IPTVTuner.exe
+F:\desktop wipe 2021\FilesForReinstall\source\repos\iptvtuner\obj\Debug\IPTVTuner.pdb
