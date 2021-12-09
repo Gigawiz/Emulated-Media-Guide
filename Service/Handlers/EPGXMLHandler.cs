@@ -3,7 +3,7 @@ using System.IO;
 using System.Threading.Tasks;
 using uhttpsharp;
 
-namespace PPK.EmulatedMediaGuide.Handlers
+namespace EmulatedMediaGuide.Handlers
 {
     /**
      * Serves epg.xml from the data path.

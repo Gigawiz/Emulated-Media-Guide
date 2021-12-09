@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("A guide emulator for private media content hosting services")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Pew Pew Kittens")]
-[assembly: AssemblyProduct("PPK.EmulatedMediaGuide")]
+[assembly: AssemblyProduct("EmulatedMediaGuide")]
 [assembly: AssemblyCopyright("Copyright ©  Pew Pew Kittens 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

@@ -1,4 +1,4 @@
-﻿using PPK.EmulatedMediaGuide.Model;
+﻿using EmulatedMediaGuide.Model;
 using System;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -8,7 +8,7 @@ using System.IO;
 using System.Threading.Tasks;
 using uhttpsharp;
 
-namespace PPK.EmulatedMediaGuide.Handlers
+namespace EmulatedMediaGuide.Handlers
 {
     /**
      * Generate a logo image with the channel name.
@@ -143,8 +143,8 @@ namespace PPK.EmulatedMediaGuide.Handlers
         private void FillBackground(Graphics g, string channelName, RectangleF bounds)
         {
             SolidBrush backgroundBrush;
-            var argb = unchecked((int)config.LogoBackground);
-            if (argb == 0x1)
+            string argb = config.LogoBackground;
+            if (argb == "0x1")
             {
                 // Use a dynamic color.
                 var index = Math.Abs(channelName.GetHashCode() % palette.Length);
@@ -154,7 +154,9 @@ namespace PPK.EmulatedMediaGuide.Handlers
             else
             {
                 // Use the provided color.
-                backgroundBrush = new SolidBrush(Color.FromArgb(argb));
+                //updated to use hex color code
+                backgroundBrush = new SolidBrush(Color.FromArgb(Int32.Parse(argb.Replace("#", ""), NumberStyles.HexNumber)));
+                //backgroundBrush = new SolidBrush(Color.FromArgb(argb));
             }
 
             using (backgroundBrush)

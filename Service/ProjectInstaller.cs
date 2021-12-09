@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace PPK.EmulatedMediaGuide
+namespace EmulatedMediaGuide
 {
     [RunInstaller(true)]
     public partial class ProjectInstaller : System.Configuration.Install.Installer

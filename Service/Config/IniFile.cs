@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace PPK.EmulatedMediaGuide
+namespace EmulatedMediaGuide
 {
     /// <summary>
     /// Create a New INI file to store or load data

@@ -1,4 +1,4 @@
-﻿using PPK.EmulatedMediaGuide.Model;
+﻿using EmulatedMediaGuide.Model;
 using Newtonsoft.Json;
 using System;
 using System.IO;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace PPK.EmulatedMediaGuide
+namespace EmulatedMediaGuide
 {
     /**
      * Builds the local lineup and EPG data by from the provider data.

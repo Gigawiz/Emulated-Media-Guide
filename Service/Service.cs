@@ -1,10 +1,10 @@
-﻿using PPK.EmulatedMediaGuide.Model;
+﻿using EmulatedMediaGuide.Model;
 using System;
 using System.Diagnostics;
 using System.ServiceProcess;
 using System.Threading;
 
-namespace PPK.EmulatedMediaGuide
+namespace EmulatedMediaGuide
 {
     public partial class Service : ServiceBase
     {

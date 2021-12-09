@@ -3,7 +3,7 @@ using System.IO;
 using System.Threading.Tasks;
 using uhttpsharp;
 
-namespace PPK.EmulatedMediaGuide.Handlers
+namespace EmulatedMediaGuide.Handlers
 {
     /**
      * Serves lineup.json from the data path.

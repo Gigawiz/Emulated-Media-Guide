@@ -1,9 +1,9 @@
-﻿using PPK.EmulatedMediaGuide.Model;
+﻿using EmulatedMediaGuide.Model;
 using System;
 using System.Threading.Tasks;
 using uhttpsharp;
 
-namespace PPK.EmulatedMediaGuide.Handlers
+namespace EmulatedMediaGuide.Handlers
 {
     /**
      * Redirects requests for a channel to the underlying provider stream.

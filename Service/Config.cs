@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 
-namespace PPK.EmulatedMediaGuide
+namespace EmulatedMediaGuide
 {
     class Config
     {
@@ -20,7 +20,7 @@ namespace PPK.EmulatedMediaGuide
         private string epgUrl;
         private string logoFontFamily;
         private string logoColor;
-        private uint logoBackground;
+        private string logoBackground;
         private int gapFillAmount;
         private string gapFillTitle;
         private string logDir;
@@ -65,13 +65,13 @@ namespace PPK.EmulatedMediaGuide
             this.startChannel = int.Parse(settingsFile.IniReadValue("Server", "StartChannel", "1"));
             this.logoFontFamily = settingsFile.IniReadValue("Style", "LogoFontFamily", "Segoe UI");
             this.logoColor = settingsFile.IniReadValue("Style", "LogoColor", "#DCDCDC");
-            this.logoBackground = uint.Parse(settingsFile.IniReadValue("Style", "LogoBackground", "1"));
+            this.logoBackground = settingsFile.IniReadValue("Style", "LogoBackground", "0x1");
             this.gapFillAmount = int.Parse(settingsFile.IniReadValue("Style", "GapFillAmount", "0"));
             this.gapFillTitle = settingsFile.IniReadValue("Style", "GapFillTitle", "Unknown Airing");
             this.logDir = settingsFile.IniReadValue("Logging", "LogFolder", Path.Combine(this.DataPath, "logs"));
             this.textLoggingEnabled = bool.Parse(settingsFile.IniReadValue("Logging", "Enabled", "True"));
-            this.m3uUrl = settingsFile.IniReadValue("Data", "m3uUrl", "http://siptv.app/lists/example.m3u");
-            this.epgUrl = settingsFile.IniReadValue("Data", "epgUrl", "https://pewpewkittens.com/emuguide/tvtv2xmltv.php");
+            this.m3uUrl = settingsFile.IniReadValue("Data", "m3uUrl", "http://yourwebsite.com/emuguide/yourcustomlineup.m3u");
+            this.epgUrl = settingsFile.IniReadValue("Data", "epgUrl", "https://yourwebsite.com/emuguide/yourcustomlineup.xml");
             this.filter = settingsFile.IniReadValue("Regex", "Filter", ".*");
         }
 
@@ -129,7 +129,7 @@ namespace PPK.EmulatedMediaGuide
             get { return this.logoColor; }
         }
 
-        public uint LogoBackground
+        public string LogoBackground
         {
             get { return this.logoBackground; }
         }

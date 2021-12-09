@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B7163721-9D4C-4976-9DD1-18ED12A294DF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>PPK.EmulatedMediaGuide</RootNamespace>
-    <AssemblyName>Emulated-Media-Guide</AssemblyName>
+    <RootNamespace>EmulatedMediaGuide</RootNamespace>
+    <AssemblyName>EmulatedMediaGuide</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -35,7 +35,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>PPK.EmulatedMediaGuide.Program</StartupObject>
+    <StartupObject>EmulatedMediaGuide.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

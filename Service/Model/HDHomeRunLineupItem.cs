@@ -1,4 +1,4 @@
-﻿namespace PPK.EmulatedMediaGuide.Model
+﻿namespace EmulatedMediaGuide.Model
 {
     class HDHomeRunLineupItem
     {

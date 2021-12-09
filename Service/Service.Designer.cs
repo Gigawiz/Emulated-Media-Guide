@@ -1,4 +1,4 @@
-﻿namespace PPK.EmulatedMediaGuide
+﻿namespace EmulatedMediaGuide
 {
     partial class Service
     {
@@ -31,7 +31,7 @@
             // 
             // Service
             // 
-            this.ServiceName = "PPK.EmulatedMediaGuide";
+            this.ServiceName = "EmulatedMediaGuide";
 
         }
 

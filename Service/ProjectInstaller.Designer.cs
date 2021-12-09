@@ -1,4 +1,4 @@
-﻿namespace PPK.EmulatedMediaGuide
+﻿namespace EmulatedMediaGuide
 {
     partial class ProjectInstaller
     {
@@ -34,8 +34,8 @@
             // serviceInstaller1
             // 
             this.serviceInstaller1.Description = "IPTV tuner emulator for private media hosting applications";
-            this.serviceInstaller1.DisplayName = "PPK.EmulatedMediaGuide";
-            this.serviceInstaller1.ServiceName = "PPK.EmulatedMediaGuide";
+            this.serviceInstaller1.DisplayName = "EmulatedMediaGuide";
+            this.serviceInstaller1.ServiceName = "EmulatedMediaGuide";
             this.serviceInstaller1.StartType = System.ServiceProcess.ServiceStartMode.Automatic;
             // 
             // serviceProcessInstaller1

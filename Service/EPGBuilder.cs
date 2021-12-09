@@ -1,11 +1,11 @@
-﻿using PPK.EmulatedMediaGuide.Model;
+﻿using EmulatedMediaGuide.Model;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Xml.Linq;
 
-namespace PPK.EmulatedMediaGuide
+namespace EmulatedMediaGuide
 {
     /**
      * Build an EPG in XMLTV format combining the local lineup and provider supplied XML. 

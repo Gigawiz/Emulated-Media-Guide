@@ -4,7 +4,7 @@ using System.IO;
 using uhttpsharp;
 using uhttpsharp.Headers;
 
-namespace PPK.EmulatedMediaGuide.Handlers
+namespace EmulatedMediaGuide.Handlers
 {
     class MyHandler
     {

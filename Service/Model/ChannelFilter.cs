@@ -1,8 +1,8 @@
-﻿using PPK.EmulatedMediaGuide.Model;
+﻿using EmulatedMediaGuide.Model;
 using System;
 using System.Text.RegularExpressions;
 
-namespace PPK.EmulatedMediaGuide
+namespace EmulatedMediaGuide
 {
     class ChannelFilter
     {

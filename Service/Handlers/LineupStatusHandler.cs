@@ -3,7 +3,7 @@ using System.IO;
 using System.Threading.Tasks;
 using uhttpsharp;
 
-namespace PPK.EmulatedMediaGuide.Handlers
+namespace EmulatedMediaGuide.Handlers
 {
     /**
      * Mocks the lineup status to allow the tuner to be installed.

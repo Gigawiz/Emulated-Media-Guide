@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace PPK.EmulatedMediaGuide.Model
+namespace EmulatedMediaGuide.Model
 {
     class Lineup
     {

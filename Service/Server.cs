@@ -1,5 +1,5 @@
-﻿using PPK.EmulatedMediaGuide.Handlers;
-using PPK.EmulatedMediaGuide.Model;
+﻿using EmulatedMediaGuide.Handlers;
+using EmulatedMediaGuide.Model;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading.Tasks;
@@ -8,7 +8,7 @@ using uhttpsharp.Handlers;
 using uhttpsharp.Listeners;
 using uhttpsharp.RequestProviders;
 
-namespace PPK.EmulatedMediaGuide
+namespace EmulatedMediaGuide
 {
     class Server
     {

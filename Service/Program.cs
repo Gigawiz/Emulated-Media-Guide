@@ -5,7 +5,7 @@ using System.Reflection;
 using System.ServiceProcess;
 using System.Threading.Tasks;
 
-namespace PPK.EmulatedMediaGuide
+namespace EmulatedMediaGuide
 {
     static class Program
     {

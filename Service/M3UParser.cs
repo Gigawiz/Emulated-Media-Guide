@@ -1,10 +1,10 @@
-﻿using PPK.EmulatedMediaGuide.Model;
+﻿using EmulatedMediaGuide.Model;
 using System;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace PPK.EmulatedMediaGuide
+namespace EmulatedMediaGuide
 {
     /**
      * A streaming M3UEXT parser with filtering.

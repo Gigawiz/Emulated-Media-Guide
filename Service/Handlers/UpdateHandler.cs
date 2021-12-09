@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using uhttpsharp;
 
-namespace PPK.EmulatedMediaGuide.Handlers
+namespace EmulatedMediaGuide.Handlers
 {
     /**
      * Administrative route to trigger a provider lineup and EPG update.
